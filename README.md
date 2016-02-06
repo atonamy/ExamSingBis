@@ -7,4 +7,4 @@ The interview task was:
 3. Create a Product table.
 4. Import the raw data of “data.csv” into the Product Table.
 5. Place a login page before accessing CRUD
-	a. Use the existing table called “employee” for login.
+* Use the existing table called “employee” for login.
