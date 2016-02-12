@@ -90,7 +90,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
                 if(attemptLogin()) {
                     DataBaseHelper db = new DataBaseHelper(LoginActivity.this);
                     db.openDataBase();
-                    DataBaseHelper.Employee employee = db.getEmployee("admin");
+                    DataBaseHelper.Employee employee = db.getEmployee(mEmailView.getText().toString());
                     db.close();
                     if(employee != null && employee.password.equals(mPasswordView.getText().toString())) {
                         Intent intent = new Intent(LoginActivity.this, MainActivity.class);
